@@ -62,3 +62,9 @@ document.querySelector('#form').addEventListener('submit', function(e){
 //     //     console.error(xhr.responseText);
 //     // }
 //   });
+
+let colors = ['red', 'blue', 'yellow', 'green', 'gray']
+
+$(window).on('load', function(){
+  $('body').css('background-color', `${colors[Math.floor(Math.random() * colors.length)]}`)
+})
